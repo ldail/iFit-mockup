@@ -1,6 +1,6 @@
 import React from 'react';
 import './Main.css';
-import { REVIEWS, VIDEOS } from '../../assets/info';
+import { REVIEWS, VIDEOS, EQUIPMENT } from '../../assets/info';
 import {ReactComponent as ArrowLeft} from '../../assets/icons/chevron-circle-left-solid.svg';
 import {ReactComponent as ArrowRight} from '../../assets/icons/chevron-circle-right-solid.svg';
 import timeIcon from '../../assets/icons/time-icon.png';
@@ -77,10 +77,14 @@ const Main = ({topHeaderRef, subHeaderRef}) => {
       <div className="equipment">
         <h3>Interested in our exciting iFit-enabled equipment?</h3>
         <ul>
-          <li className="equipment-item">
-            <img src="#" alt="exercise equipment" />
-            <span className="equipment-title">Treadmills</span>
-          </li>
+          {EQUIPMENT.map((equipmentItem,i) => {
+            return (
+              <li className="equipment-item" key={i}>
+                <img src={equipmentItem.image} alt={equipmentItem.title} />
+                <span className="equipment-title">{equipmentItem.title}</span>
+              </li>
+            )
+          })}
         </ul>
       </div>
     </main>
