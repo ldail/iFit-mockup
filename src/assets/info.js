@@ -39,72 +39,88 @@ export const SUBNAV_LIST = [
 export const REVIEWS = [
   {
     companyName: 'GearJunkie',
-    companyLogo: GearJunkieLogo,
+    CompanyLogo: GearJunkieLogo,
     reviewInfo: 'You focus on putting in the hard work, and the technology handles the rest.'
   },
   {
     companyName: 'WIRED',
-    companyLogo: WiredLogo,
+    CompanyLogo: WiredLogo,
     reviewInfo: 'Literally transports you from home to wherever you choose to run.'
   },
   {
     companyName: 'Mashable',
-    companyLogo: MashableLogo,
+    CompanyLogo: MashableLogo,
     reviewInfo: 'Breathes new life into a tired, old running routine.'
   }
 ];
 
 export const VIDEOS = [
   {
-    videoTitle: 'Lake Inniscarra, Ireland—Pyramid',
-    videoId: 1,
+    title: 'Lake Inniscarra, Ireland—Pyramid',
+    thumbnail: require('../assets/videos/video1thumbnail.png'),
+    userAvatar: require('../assets/videos/video1user.png'),
     isSeries: false,
+    url: '#',
     length: '30:53',
     views: '6,248 M'
   },
   {
-    videoTitle: 'Performance Series',
-    vieoId: 2,
+    title: 'Performance Series',
+    thumbnail: require('../assets/videos/video2thumbnail.png'),
+    userAvatar: require('../assets/videos/video2user.png'),
     isSeries: true,
+    url: '#',
     playlistCount: 9
   },
   {
-    videoTitle: 'Slow Pulls and Fast Intervals',
-    videoId: 3,
+    title: 'Slow Pulls and Fast Intervals',
+    thumbnail: require('../assets/videos/video3thumbnail.png'),
+    userAvatar: require('../assets/videos/video3user.png'),
     isSeries: false,
+    url: '#',
     length: '44:13',
     views: '9,948 M'
   },
   {
-    videoTitle: '20 Minutes to Toned',
-    vieoId: 4,
+    title: '20 Minutes to Toned',
+    thumbnail: require('../assets/videos/video4thumbnail.png'),
+    userAvatar: require('../assets/videos/video4user.png'),
     isSeries: true,
+    url: '#',
     playlistCount: 12
   },
   {
-    videoTitle: 'Charles Race, Boston, Massachusetts',
-    videoId: 5,
+    title: 'Charles Race, Boston, Massachusetts',
+    thumbnail: require('../assets/videos/video5thumbnail.png'),
+    userAvatar: require('../assets/videos/video5user.png'),
     isSeries: false,
+    url: '#',
     length: '36:22',
     views: '8,648 M'
   },
   {
-    videoTitle: 'Full-Body HIIT Series',
-    vieoId: 6,
+    title: 'Full-Body HIIT Series',
+    thumbnail: require('../assets/videos/video6thumbnail.png'),
+    userAvatar: require('../assets/videos/video6user.png'),
     isSeries: true,
+    url: '#',
     playlistCount: 12
   },
   {
-    videoTitle: 'Kafue River, Zambia—Power Stroke Pyramid',
-    videoId: 7,
+    title: 'Kafue River, Zambia—Power Stroke Pyramid',
+    thumbnail: require('../assets/videos/video7thumbnail.png'),
+    userAvatar: require('../assets/videos/video7user.png'),
     isSeries: false,
+    url: '#',
     length: '22:22',
     views: '4,660 M'
   },
   {
-    videoTitle: 'Shred & Burn Series',
-    vieoId: 6,
+    title: 'Shred & Burn Series',
+    thumbnail: require('../assets/videos/video8thumbnail.png'),
+    userAvatar: require('../assets/videos/video8user.png'),
     isSeries: true,
+    url: '#',
     playlistCount: 16
   },
 ];
@@ -112,19 +128,19 @@ export const VIDEOS = [
 export const EQUIPMENT = [
   {
     title: 'Treadmills',
-    image: '../assets/equipment/treadmills.png'
+    image: require('../assets/equipment/treadmills.png'),
   },
   {
     title: 'Bikes',
-    image: '../assets/equipment/bikes.png'
+    image: require('../assets/equipment/bikes.png'),
   },
   {
     title: 'Ellipticals',
-    image: '../assets/equipment/ellipticals.png'
+    image: require('../assets/equipment/ellipticals.png'),
   },
   {
     title: 'Strength',
-    image: '../assets/equipment/strength.png'
+    image: require('../assets/equipment/strength.png')
   },
 ];
 
@@ -178,26 +194,26 @@ export const FOOTER_SOCIAL_LINKS = [
   {
     website: 'YouTube',
     url: '#',
-    icon: '../assets/icons/youtube.png'
+    icon: require('../assets/icons/youtube.png')
   },
   {
     website: 'Pinterest',
     url: '#',
-    icon: '../assets/icons/pinterest.png'
+    icon: require('../assets/icons/pinterest.png')
   },
   {
     website: 'Facebook',
     url: '#',
-    icon: '../assets/icons/facebook.png'
+    icon: require('../assets/icons/facebook.png')
   },
   {
     website: 'Twitter',
     url: '#',
-    icon: '../assets/icons/twitter.png'
+    icon: require('../assets/icons/twitter.png')
   },
   {
     website: 'Instagram',
     url: '#',
-    icon: '../assets/icons/instagram.png'
+    icon: require('../assets/icons/instagram.png')
   }
 ];

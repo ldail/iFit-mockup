@@ -1,0 +1,36 @@
+.fixed-side-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.menu-icon {
+  height: 26px;
+  margin-left: 10px;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid rgba(46, 49, 52, 0.4);
+  height: 72px;
+}
+
+.info-header {
+  display: flex;
+  justify-content: space-evenly;
+  height: 52px;
+  align-items: center;
+  padding: 10px;
+}
+
+.info-header li {
+  color: rgba(46, 49, 52, 0.8);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
