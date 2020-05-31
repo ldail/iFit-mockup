@@ -1,16 +1,27 @@
 /* HERO */
 
-.hero-image {
-  background-image: url('../../assets/hero.png');
-  background-position-x: -300px;
+.hero-image-container {
+  background: black;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+}
+
+.hero-image {
+  position: absolute;
+  background-image: url('../../assets/hero.png');
+  background-position-x: -300px;
+  top: 0;
+  left: 0;
+  opacity: 0.78;
+  width: 100%;
 }
 
 .main h2 {
-  color: black;
+  color: white;
   font-size: 30px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -18,16 +29,18 @@
   margin-bottom: 80px;
   text-shadow: 0 3px 6px rgba(46, 49, 52, 0.8);
   text-align: center;
+  z-index: 1;
 }
 
 .main h2 span {
   display: block;
 }
 
-.hero-image button.join {
+.hero-image-container button.join {
   width: 365px;
   height: 40px;
   max-width: 90vw;
+  z-index: 1;
 }
 
 /* REVIEWS */
@@ -65,9 +78,19 @@
 
 .review-arrow {
   position: absolute;
-  top: 50%;
-  height: 30px;
-  width: 30px;
+  top: 72px;
+  background: none;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 7px 12px rgba(46, 49, 52, 0.3);
+  border: 1px solid rgba(244, 245, 247, 0.32);
+  background-color: #000c28;
+  opacity: 0.8;
+  border-radius: 50%;
 }
 
 .review-arrow:hover {
@@ -82,6 +105,10 @@
 .review-arrow.right {
   right: 0;
   margin-right: -10px;
+}
+
+.arrow-direction {
+  position: absolute;
 }
 
 /* VIDEOS */
@@ -237,14 +264,33 @@
 }
 
 .equipment-item {
-  width: 80vw;
-  max-width: 330px;
   height: 330px;
+  width: 330px;
   box-shadow: 0 1px 2px rgba(46, 49, 52, 0.4);
   border-radius: 4px;
   background-color: #ffffff;
   margin: 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.equipment-item img {
+  width: 181px;
+  height: 228px;
+}
+
+.equipment-item span {
+  width: 184px;
+  height: 28px;
+  opacity: 0.8;
+  color: #2e3134;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  line-height: 28px;
+  margin-top: 10px;
 }

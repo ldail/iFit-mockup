@@ -129,19 +129,23 @@ export const EQUIPMENT = [
   {
     title: 'Treadmills',
     image: require('../assets/equipment/treadmills.png'),
+    url: '#'
   },
   {
     title: 'Bikes',
     image: require('../assets/equipment/bikes.png'),
+    url: '#'
   },
   {
     title: 'Ellipticals',
     image: require('../assets/equipment/ellipticals.png'),
+    url: '#'
   },
   {
     title: 'Strength',
-    image: require('../assets/equipment/strength.png')
-  },
+    image: require('../assets/equipment/strength.png'),
+    url: '#'
+  }
 ];
 
 export const FOOTER_MAP = [
