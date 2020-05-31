@@ -1,3 +1,40 @@
+/* FONTS */
+
+@font-face { 
+  font-family: 'ProximaNova-Regular'; 
+  src: url('./assets/fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), 
+  url('./assets/fonts/ProximaNova-Regular.woff') format('woff'), 
+  url('./assets/fonts/ProximaNova-Regular.ttf') format('truetype'),
+   url('./assets/fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg'); 
+   font-weight: normal; font-style: normal; 
+}
+
+@font-face { 
+  font-family: 'ProximaNova-Light'; 
+  src: url('./assets/fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'), 
+  url('./assets/fonts/ProximaNova-Light.otf') format('opentype'), 
+  url('./assets/fonts/ProximaNova-Light.woff') format('woff'), 
+  url('./assets/fonts/ProximaNova-Light.ttf') format('truetype'), 
+  url('./assets/fonts/ProximaNova-Light.svg#ProximaNova-Light') format('svg'); 
+  font-weight: normal; font-style: normal; 
+}
+
+@font-face { 
+  font-family: 'LeagueGothic-Regular'; 
+  src: url('./assets/fonts/LeagueGothic-Regular.eot?#iefix') format('embedded-opentype'), 
+  url('./assets/fonts/LeagueGothic-Regular.otf') format('opentype'), 
+  url('./assets/fonts/LeagueGothic-Regular.woff') format('woff'), 
+  url('./assets/fonts/LeagueGothic-Regular.ttf') format('truetype'), 
+  url('./assets/fonts/LeagueGothic-Regular.svg#LeagueGothic-Regular') format('svg'); 
+  font-weight: normal; font-style: normal; 
+}
+
+/* GENERAL */
+
+* {
+  font-family: 'ProximaNova-Regular', Arial, sans-serif;
+}
+
 button {
   border: none;
 }
@@ -25,6 +62,7 @@ ul {
   background-color: #0069d2;
   color: white;
   text-transform: uppercase;
+  font-family: 'ProximaNova-Regular', Arial, sans-serif;
 }
 
 .blue-button:hover {

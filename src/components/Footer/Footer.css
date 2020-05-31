@@ -37,6 +37,10 @@
   margin-bottom: 13px;
 }
 
+.footer-list li a {
+  font-family: 'ProximaNova-Light', Arial, sans-serif;
+}
+
 .footer-list li a:hover {
   opacity: 1;
 }

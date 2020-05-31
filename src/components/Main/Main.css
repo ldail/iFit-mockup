@@ -30,6 +30,7 @@
   text-shadow: 0 3px 6px rgba(46, 49, 52, 0.8);
   text-align: center;
   z-index: 1;
+  font-family: 'ProximaNova-Light', Arial, sans-serif;
 }
 
 .main h2 span {
@@ -41,6 +42,7 @@
   height: 40px;
   max-width: 90vw;
   z-index: 1;
+  font-family: 'ProximaNova-Light', Arial, sans-serif;
 }
 
 /* REVIEWS */
@@ -74,6 +76,11 @@
   padding-left: 30px;
   padding-right: 30px;
   text-align: center;
+  color: #2e3134;
+}
+
+.review-item p {
+  opacity: 0.8;
 }
 
 .review-arrow {
@@ -224,6 +231,7 @@
   font-weight: 400;
   letter-spacing: 0.5px;
   line-height: 30px;
+  font-family: 'LeagueGothic-Regular', Arial, sans-serif;
 }
 
 .playlist-info .playlist-count-type {
@@ -261,6 +269,7 @@
   line-height: 28px;
   text-align: center;
   padding: 25px 20px;
+  font-family: 'ProximaNova-Light', Arial, sans-serif;
 }
 
 .equipment-item {

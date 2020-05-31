@@ -16,6 +16,7 @@
   padding: 10px;
   border-bottom: 1px solid rgba(46, 49, 52, 0.4);
   height: 72px;
+  font-family: 'ProximaNova-Light', Arial, sans-serif;
 }
 
 .info-header {
@@ -24,6 +25,7 @@
   height: 52px;
   align-items: center;
   padding: 10px;
+  font-family: 'ProximaNova-Light', Arial, sans-serif;
 }
 
 .info-header li {
