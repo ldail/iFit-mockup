@@ -6,16 +6,16 @@ import downArrow from '../../assets/icons/down-arrow.png';
 const Footer = () => {
   return (
     <footer className="footer">
-      <section className="footer-section">
-        {FOOTER_MAP.map(siteMapList => 
-          <>
+      <section className="footer-section site-map">
+        {FOOTER_MAP.map((siteMapList, i) => 
+          <div className="map-section" key={i}>
             <h6 className="footer-title">{siteMapList.title}</h6>
             <ul className="footer-list">
               {siteMapList.list.map((siteMapItem,i) => 
                 <li key={i}><a href={siteMapItem.url}>{siteMapItem.title}</a></li>
               )}
             </ul>
-          </>
+          </div>
         )}
       </section>
       <section className="footer-section">
@@ -32,10 +32,13 @@ const Footer = () => {
          )}
         </ul>
       </section>
-      <section className="footer-section">
+      <section className="footer-section language-container">
         <div className="select-container">
           <select className="language-selection" name="language-selection" id="language-selection">
             <option value="English">English</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Korean">Korean</option>
+            <option value="German">German</option>
           </select>
           <div className="select-button"><img src={downArrow} alt="select option" /></div>
         </div>

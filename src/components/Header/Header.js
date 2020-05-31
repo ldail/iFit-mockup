@@ -16,16 +16,18 @@ const Header = ({topHeaderRef, subHeaderRef}) => {
           <button className="blue-button">SIGN UP</button>
         </div>
       </div>
-      <ul className="info-header">
+      <ul className="info-header nav">
       {NAV_LIST.map((navItem,i) =>
           <li key={i} className="navigation-item"><a href={navItem.url}><span>{navItem.title}</span></a></li>
         )}
       </ul>
-      <ul className="info-header" ref={subHeaderRef}>
-        {SUBNAV_LIST.map((navItem,i) =>
-          <li key={i}><a href={navItem.url}>{navItem.title}</a></li>
-        )}
-      </ul>
+      <div className="desktop-container">
+        <ul className="info-header sub-nav" ref={subHeaderRef}>
+          {SUBNAV_LIST.map((navItem,i) =>
+            <li key={i}><a href={navItem.url}>{navItem.title}</a></li>
+          )}
+        </ul>
+      </div>
     </header>
   );
 };

@@ -1,12 +1,6 @@
-.fixed-side-nav {
+.header {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.menu-icon {
-  height: 26px;
-  margin-left: 10px;
+  flex-direction: column;
 }
 
 .top-header {
@@ -17,6 +11,20 @@
   border-bottom: 1px solid rgba(46, 49, 52, 0.4);
   height: 72px;
   font-family: 'ProximaNova-Light', Arial, sans-serif;
+}
+
+h1 {
+  z-index: 2;
+}
+
+.fixed-side-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.fixed-side-nav button {
+  z-index: 2;
 }
 
 .info-header {
@@ -53,4 +61,50 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 1028px) {
+  .header {
+    flex-direction: column-reverse;
+    position: relative;
+  }
+
+  .top-header {
+    padding: 0px 40px;
+    border-top: 1px solid rgba(46, 49, 52, 0.4);
+  }
+
+  .nav {
+    width: 400px;
+  }
+
+  .nav.info-header {
+    justify-content: flex-start;
+  }
+
+
+  .nav li.navigation-item {
+    border-left: none;
+    border-bottom: none;
+    border-right: 1px solid rgba(46, 49, 52, 0.4);
+    padding: 0px 40px;
+  }
+
+  .desktop-container {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .sub-nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sub-nav li {
+    margin: 0px 15px;
+  }
 }

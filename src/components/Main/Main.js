@@ -12,17 +12,20 @@ const Main = ({topHeaderRef, subHeaderRef}) => {
   /*
   Determine the height of the hero image. For mobile, we need to take the window's height,
   subtract the headers, and also leave space at the bottom so it is obvious there is more to scroll to.
+  The image's max size is 801 pixels height, so if it exceeds that, keep it at 801.
   */
   const [heroHeight, setHeroHeight] = useState(500);
   useEffect(() => {
-    setHeroHeight(window.innerHeight - topHeaderRef?.current?.offsetHeight - (subHeaderRef?.current?.offsetHeight * 2) - 40 || 500);
-    console.log(subHeaderRef);
+    const determinedHeight = window.innerHeight - topHeaderRef?.current?.offsetHeight - (subHeaderRef?.current?.offsetHeight * 2) - 40 || 500;
+    setHeroHeight(determinedHeight <= 801 ? determinedHeight : 801);
   },[subHeaderRef, topHeaderRef]);
+
+  const widthDifference = parseInt((window.innerWidth - 1441) / 2);
 
   return (
     <main className="main">
       <div className="hero-image-container" style={{height: `${heroHeight}px`}}>
-        <div className="hero-image" style={{height: `${heroHeight}px`}} />
+        <div className="hero-image" style={{height: `${heroHeight}px`, marginLeft: widthDifference > 0 ? `${widthDifference}px` : `0px` }} />
         <h2>
           <span>The best personal training,</span>
           <span>right in your own home</span>
@@ -59,11 +62,11 @@ const Main = ({topHeaderRef, subHeaderRef}) => {
                     <img src={video.userAvatar} alt="User avatar" className="user-avatar" />
                   </div>
                 {video.isSeries
-                  ? <div className="playlist-info">
+                  ? <a href={video.url} className="playlist-info">
                       <span className="playlist-count">{video.playlistCount}</span>
                       <span className="playlist-count-type">WORKOUTS</span>
-                      <a href={video.url}><img src={viewPlaylistIcon} alt="view playlist" className="view-playlist" /></a>
-                    </div>
+                      <img src={viewPlaylistIcon} alt="view playlist" className="view-playlist" />
+                    </a>
                   : <>
                       <ul className="video-stats">
                         <li>
