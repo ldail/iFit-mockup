@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/iFit-mockup/static/css/main.42aad4ea.chunk.css",
-    "main.js": "/iFit-mockup/static/js/main.33f4f625.chunk.js",
-    "main.js.map": "/iFit-mockup/static/js/main.33f4f625.chunk.js.map",
+    "main.css": "/iFit-mockup/static/css/main.0a7a82fe.chunk.css",
+    "main.js": "/iFit-mockup/static/js/main.337d3a5e.chunk.js",
+    "main.js.map": "/iFit-mockup/static/js/main.337d3a5e.chunk.js.map",
     "runtime-main.js": "/iFit-mockup/static/js/runtime-main.22d34e39.js",
     "runtime-main.js.map": "/iFit-mockup/static/js/runtime-main.22d34e39.js.map",
     "static/js/2.9a927a02.chunk.js": "/iFit-mockup/static/js/2.9a927a02.chunk.js",
     "static/js/2.9a927a02.chunk.js.map": "/iFit-mockup/static/js/2.9a927a02.chunk.js.map",
     "index.html": "/iFit-mockup/index.html",
-    "precache-manifest.3bf4e19cf8811aaa5b8fc6a175b751e9.js": "/iFit-mockup/precache-manifest.3bf4e19cf8811aaa5b8fc6a175b751e9.js",
+    "precache-manifest.f77ecd38e4adeab9960d8de87e8f93a7.js": "/iFit-mockup/precache-manifest.f77ecd38e4adeab9960d8de87e8f93a7.js",
     "service-worker.js": "/iFit-mockup/service-worker.js",
-    "static/css/main.42aad4ea.chunk.css.map": "/iFit-mockup/static/css/main.42aad4ea.chunk.css.map",
+    "static/css/main.0a7a82fe.chunk.css.map": "/iFit-mockup/static/css/main.0a7a82fe.chunk.css.map",
     "static/js/2.9a927a02.chunk.js.LICENSE.txt": "/iFit-mockup/static/js/2.9a927a02.chunk.js.LICENSE.txt",
     "static/media/App.css": "/iFit-mockup/static/media/ProximaNova-Regular.feface72.ttf",
     "static/media/bikes.png": "/iFit-mockup/static/media/bikes.b17c657f.png",
@@ -34,7 +34,7 @@
   "entrypoints": [
     "static/js/runtime-main.22d34e39.js",
     "static/js/2.9a927a02.chunk.js",
-    "static/css/main.42aad4ea.chunk.css",
-    "static/js/main.33f4f625.chunk.js"
+    "static/css/main.0a7a82fe.chunk.css",
+    "static/js/main.337d3a5e.chunk.js"
   ]
 }

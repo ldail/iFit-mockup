@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a1e18aa8178ea2edbdab709e7922d46a",
+    "revision": "8a456f8146363773400e475319493db4",
     "url": "/iFit-mockup/index.html"
   },
   {
-    "revision": "b39090e7ad3555c01390",
-    "url": "/iFit-mockup/static/css/main.42aad4ea.chunk.css"
+    "revision": "62e6582177b5522e81ef",
+    "url": "/iFit-mockup/static/css/main.0a7a82fe.chunk.css"
   },
   {
     "revision": "162f1fbe691b9d8da419",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/iFit-mockup/static/js/2.9a927a02.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b39090e7ad3555c01390",
-    "url": "/iFit-mockup/static/js/main.33f4f625.chunk.js"
+    "revision": "62e6582177b5522e81ef",
+    "url": "/iFit-mockup/static/js/main.337d3a5e.chunk.js"
   },
   {
     "revision": "bac2eb15cb7d8cd959e8",
