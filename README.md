@@ -13,8 +13,8 @@ Thank you so much for this opportunity! It was fun making this mock-up, and I ho
 To run this code, either:
 
 1. visit the current working environment: [https://ldail.github.io/iFit-mockup/](iFit Mockup)
-2. Run `npm start` in the terminal.
-3. Use 'serve', then build and deploy a version locally.
+2. Open up the folder. Run `npm i` in the terminal. Once finished, run `npm start`.
+3. Open up the folder. Run `npm i` in the terminal. Once finished, use 'serve', then build and deploy a version locally.
 ---
 
 ## Challenges Accepted
