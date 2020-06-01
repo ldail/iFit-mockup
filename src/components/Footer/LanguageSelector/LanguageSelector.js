@@ -1,6 +1,11 @@
+//Dependencies
 import React from 'react';
-import downArrow from '../../../assets/icons/down-arrow.png';
+
+//Styling
 import './LanguageSelector.css';
+
+//Assets
+import downArrow from '../../../assets/icons/down-arrow.png';
 
 const LanguageSelector = () => {
   return (

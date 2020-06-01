@@ -1,10 +1,13 @@
+//Dependencies
 import React, { useEffect, useState, useRef } from 'react';
-import './Main.css';
 import Reviews from './Reviews/Reviews';
 import Videos from './Videos/Videos';
 import Equipment from './Equipment/Equipment';
 
-const Main = ({topHeaderRef, subHeaderRef}) => {
+//Styling
+import './Main.css';
+
+const Main = ({topHeaderRef, subHeaderRef, isHeaderVisible, setIsHeaderVisible}) => {
 
   /*
   Determine the height of the hero image. For mobile, we need to take the window's height,
@@ -29,6 +32,40 @@ const Main = ({topHeaderRef, subHeaderRef}) => {
     heroTextFirstRef.current.classList.add('fade-in');
     heroTextSecondRef.current.classList.add('fade-in-delay');
   },[])
+
+
+  /*
+  Effect: When we scroll past the hero image, make the header disappear.
+  We pass this prop in from App.js, and then also into Header.js
+  */
+  const prevScrollY = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    //Scrolling down
+    if (prevScrollY.current < currentScrollY && currentScrollY > heroHeight && isHeaderVisible) {
+      setIsHeaderVisible(false);
+    }
+    console.log(prevScrollY.current);
+    console.log(currentScrollY);
+
+    //Scrolling down
+    if (prevScrollY.current > currentScrollY && currentScrollY < heroHeight && !isHeaderVisible) {
+      setIsHeaderVisible(true);
+    }
+
+    prevScrollY.current = currentScrollY;
+    console.log(isHeaderVisible, currentScrollY);
+  };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isHeaderVisible, setIsHeaderVisible, heroHeight]);
+
+
 
   const widthDifference = parseInt((window.innerWidth - 1441 - 1) / 2);
 

@@ -1,6 +1,6 @@
 {
-  "name": "ifit",
-  "homepage": "http://ldail.github.io/iFit-mockup",
+  "name": "iFit-mockup",
+  "homepage": "https://ldail.github.io/iFit-mockup/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

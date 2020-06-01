@@ -1,9 +1,14 @@
+//Dependencies
 import React, { useState } from 'react';
+
+//Styling
+import './Videos.css';
+
+//Assets
 import { VIDEOS } from '../../../assets/info';
 import timeIcon from '../../../assets/icons/time-icon.png';
 import viewsIcon from '../../../assets/icons/views-icon.png';
 import viewPlaylistIcon from '../../../assets/icons/playlist-icon.png';
-import './Videos.css';
 
 const Videos = () => {
 

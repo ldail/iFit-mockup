@@ -35,6 +35,10 @@
   align-items: center;
 }
 
+.language-selection option {
+  color: #2e3134;
+}
+
 @media only screen and (min-width: 720px) {
   .select-container {
     position: absolute;

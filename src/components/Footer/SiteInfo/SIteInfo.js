@@ -1,4 +1,7 @@
+//Dependencies
 import React from 'react';
+
+//Styling
 import './SiteInfo.css';
 
 const SIteInfo = () => {

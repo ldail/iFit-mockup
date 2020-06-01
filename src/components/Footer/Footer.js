@@ -1,8 +1,11 @@
+//Dependencies
 import React from 'react';
-import './Footer.css';
 import SiteMap from './SiteMap/SiteMap';
 import SocialLinks from './SocialLinks/SocialLinks';
 import LanguageSelector from './LanguageSelector/LanguageSelector';
+
+//Styling
+import './Footer.css';
 
 const Footer = () => {
   return (

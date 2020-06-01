@@ -73,6 +73,34 @@ h1 {
   border-bottom: 1px solid rgba(46, 49, 52, 0.4);
 }
 
+/* ANIMATIONS */
+
+.slide-up {
+  animation: 1s forwards slideUp
+}
+
+.slide-down {
+  animation: 1s forwards slideDown
+}
+
+@keyframes slideUp {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -400px;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    top: -400px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: 1028px) {

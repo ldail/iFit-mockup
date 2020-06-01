@@ -8,9 +8,9 @@ import './Header.css';
 import {ReactComponent as IFitCoachLogo} from '../../assets/logos/ifit-coach-logo.svg'
 import { SUBNAV_LIST, NAV_LIST } from '../../assets/info';
 
-const Header = ({topHeaderRef, subHeaderRef}) => {
+const Header = ({topHeaderRef, subHeaderRef, isHeaderVisible}) => {
   return (
-    <header className="header">
+    <header className={`header ${isHeaderVisible ? 'slide-down' : `slide-up`}`}>
       <div className="top-header" ref={topHeaderRef}>
         <h1>
           <span className="hidden">iFit Coach</span>

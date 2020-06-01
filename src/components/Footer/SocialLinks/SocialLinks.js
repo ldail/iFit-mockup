@@ -1,6 +1,11 @@
+//Dependencies
 import React from 'react';
-import { FOOTER_SOCIAL_LINKS } from '../../../assets/info';
+
+//Styling
 import './SocialLinks.css';
+
+//Assets
+import { FOOTER_SOCIAL_LINKS } from '../../../assets/info';
 
 const SocialLinks = () => {
   return (

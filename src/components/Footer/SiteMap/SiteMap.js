@@ -1,6 +1,11 @@
+//Dependencies
 import React from 'react';
-import { FOOTER_MAP } from '../../../assets/info';
+
+//Styling
 import './SiteMap.css';
+
+//Assets
+import { FOOTER_MAP } from '../../../assets/info';
 
 const SiteMap = () => {
   return (

@@ -1,4 +1,7 @@
+//Dependencies
 import React from 'react';
+
+//Assets
 import arrowRightIcon from '../../../assets/icons/right-arrow-icon.png';
 
 const RightArrow = () => {

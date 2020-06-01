@@ -1,6 +1,11 @@
+//Dependencies
 import React from 'react';
-import { EQUIPMENT } from '../../../assets/info';
+
+//Styling
 import './Equipment.css';
+
+//Assets
+import { EQUIPMENT } from '../../../assets/info';
 
 const Equipment = () => {
   return (

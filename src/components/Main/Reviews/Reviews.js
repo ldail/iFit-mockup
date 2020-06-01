@@ -1,8 +1,13 @@
+//Dependencies
 import React from 'react';
-import './Reviews.css';
-import { REVIEWS } from '../../../assets/info';
 import LeftArrow from '../../utility/LeftArrow/LeftArrow';
 import RightArrow from '../../utility/RightArrow/RightArrow';
+
+//Styling
+import './Reviews.css';
+
+//Assets
+import { REVIEWS } from '../../../assets/info';
 
 const Reviews = () => {
 
