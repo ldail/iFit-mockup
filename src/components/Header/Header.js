@@ -1,7 +1,11 @@
+//Dependencies
 import React from 'react';
-import {ReactComponent as IFitCoachLogo} from '../../assets/logos/ifit-coach-logo.svg'
 
+//Styling
 import './Header.css';
+
+//Assets
+import {ReactComponent as IFitCoachLogo} from '../../assets/logos/ifit-coach-logo.svg'
 import { SUBNAV_LIST, NAV_LIST } from '../../assets/info';
 
 const Header = ({topHeaderRef, subHeaderRef}) => {

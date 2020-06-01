@@ -1,0 +1,22 @@
+
+.footer .site-info {
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  line-height: 16px;
+}
+
+.footer .site-info li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 720px) {
+  .site-info {
+    display: flex;
+    justify-content: center;
+  }
+
+  .site-info li {
+    margin: 0px 10px;
+  }
+}

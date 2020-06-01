@@ -1,0 +1,144 @@
+.videos {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.videos ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.video-item {
+  width: 288px;
+  box-shadow: 0 7px 12px rgba(46, 49, 52, 0.3);
+  border-radius: 4px;
+  background-color: #ffffff;
+  margin: 10px;
+  position: relative;
+}
+
+.video-item .thumbnail-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.video-item .thumbnail {
+  width: 288px;
+  max-width: 288px;
+  height: 164px;
+}
+
+.video-details {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  height: 120px;
+  margin-top: 164px;
+}
+
+.video-created-info {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.video-details h5 {
+  width: 220px;
+  height: 36px;
+  color: #2e3134;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  line-height: 18px;
+  flex: 1;
+  margin: 0;
+  margin-right: 15px;
+}
+
+.video-details .user-avatar {
+  width: 28px;
+  height: 28px;
+}
+
+.videos .video-stats {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.video-stats li {
+  display: flex;
+  height: 12px;
+  color: #2e3134;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  line-height: 12px;
+  text-transform: uppercase;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.video-stat-icon {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+.video-details-link {
+  height: 16px;
+  color: #0069d2;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.playlist-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 112px;
+  height: 164px;
+  background-color: rgba(0, 12, 40, 0.54);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.playlist-info * {
+  margin: 5px;
+}
+
+.playlist-info .playlist-count {
+  width: 17px;
+  height: 30px;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+  font-family: 'LeagueGothic-Regular', Arial, sans-serif;
+}
+
+.playlist-info .playlist-count-type {
+  width: 59px;
+  height: 12px;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.playlist-info .view-playlist {
+  width: 20px;
+  height: 13px;
+}

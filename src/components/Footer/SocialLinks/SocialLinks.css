@@ -1,0 +1,36 @@
+
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-link {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background: linear-gradient(135deg, #0069d2 0%, #28e1a5 100%);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px;
+}
+
+.social-link:hover {
+  cursor: pointer;
+}
+
+.social-link-inside {
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  background: #2e3134;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+.social-link-icon {
+  z-index: 1;
+  position: relative;
+}

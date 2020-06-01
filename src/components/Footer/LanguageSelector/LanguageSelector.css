@@ -1,0 +1,49 @@
+
+.select-container {
+  display: flex;
+  justify-content: center;
+}
+
+.select-container *:hover {
+  cursor: pointer;
+}
+
+.footer .language-selection {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+  background: inherit;
+  border: none;
+  color: white;
+  z-index: 1;
+}
+
+.select-container label {
+  display: none;
+}
+
+.footer .select-button {
+  background: #2e3134;
+  z-index: 2;
+  width: 22px;
+  height: 22px;
+  margin-left: -20px;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 720px) {
+  .select-container {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+  }
+
+  .footer .language-container {
+    border: none;
+    height: 0;
+  }
+}

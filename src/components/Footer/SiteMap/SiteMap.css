@@ -1,0 +1,45 @@
+.site-map {
+  display: flex;
+  flex-direction: column;
+}
+
+.map-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-title {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-list li {
+  opacity: 0.8;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  line-height: 16px;
+  margin-bottom: 13px;
+}
+
+.footer-list li a {
+  font-family: 'ProximaNova-Light', Arial, sans-serif;
+}
+
+.footer-list li a:hover {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 620px) {
+  .site-map {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
