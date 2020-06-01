@@ -2,7 +2,10 @@
 
 *This is a mock-up of the sketch file sent for the coding challenge.*
 
-Thank you so much for this opportunity! It was fun making this mock-up, and I hope my work speaks for itself.
+[https://github.com/ldail/iFit-mockup/](Repository Link)
+[https://ldail.github.io/iFit-mockup/](Live Link via GitHub Pages)
+
+Thank you so much for this opportunity! It was fun making this mock-up, and I hope my work shows off my dedication!
 
 ---
 ## Instructions
@@ -35,6 +38,7 @@ I opted to completed a few of the challenges in this two-day window span.
 ## Author
 
 #### Leon Dail
+##### Full-Stack Software Developer
 
 [Website](https://leondail.com)
 [LinkedIn](https://linkedin.com/in/ldail)
