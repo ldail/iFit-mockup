@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  min-height: 380px !important;
 }
 
 .hero-image {
@@ -19,6 +20,7 @@
   left: 0;
   opacity: 0.78;
   width: 100%;
+  min-height: 380px !important;
 }
 
 .main h2 {
@@ -36,6 +38,7 @@
 
 .main h2 span {
   display: block;
+  opacity: 0;
 }
 
 .hero-image-container button.join {
@@ -143,8 +146,16 @@
   position: relative;
 }
 
+.video-item .thumbnail-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
 .video-item .thumbnail {
   width: 288px;
+  max-width: 288px;
   height: 164px;
 }
 
@@ -153,6 +164,7 @@
   flex-direction: column;
   padding: 15px;
   height: 120px;
+  margin-top: 164px;
 }
 
 .video-created-info {
@@ -318,6 +330,53 @@
   margin-top: 10px;
 }
 
+/* ANIMATIONS */
+
+.fade-in {
+  animation: fadeInAnimation 1.2s forwards;
+  -webkit-animation: fadeInAnimation 1.2s forwards;
+}
+
+.fade-in-delay {
+  animation: fadeInAnimation 1.2s forwards;
+  animation-delay: .7s;
+}
+
+.scaleUpAnimation {
+  animation: scaleUpAnimation 1.2s forwards;
+}
+
+.scaleDownAnimation {
+  animation: scaleDownAnimation 1.2s forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUpAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes scaleDownAnimation {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: 620px) {
@@ -337,11 +396,15 @@
   .hero-image {
     background-position-x: 0px;
   }
-}
 
-/* The biggest size of the hero image without stretching it */
-@media only screen and (min-width: 1441px) {
-  .hero-image.oversize {
-
+  .blue-button.join {
+    width: 392px;
+    height: 56px;
   }
+
+  .main h2 {
+    font-size: 72px;
+    line-height: 90px;
+  }
+
 }

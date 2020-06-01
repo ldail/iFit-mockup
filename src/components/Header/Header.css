@@ -1,6 +1,12 @@
 .header {
   display: flex;
   flex-direction: column;
+  color: rgba(46, 49, 52, 0.8);
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  background-color: white;
+  width: 100%;
 }
 
 .top-header {
@@ -63,12 +69,15 @@ h1 {
   align-items: center;
 }
 
+.sub-nav {
+  border-bottom: 1px solid rgba(46, 49, 52, 0.4);
+}
+
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: 1028px) {
   .header {
     flex-direction: column-reverse;
-    position: relative;
   }
 
   .top-header {
@@ -102,6 +111,7 @@ h1 {
   .sub-nav {
     display: flex;
     justify-content: center;
+    border-bottom: none;
   }
 
   .sub-nav li {

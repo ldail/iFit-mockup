@@ -20,8 +20,8 @@ const Footer = () => {
       </section>
       <section className="footer-section">
         <ul className="social-links">
-          {FOOTER_SOCIAL_LINKS.map(link => 
-            <li>
+          {FOOTER_SOCIAL_LINKS.map((link,i) => 
+            <li key={i}>
               <a href={link.url}>
                 <button className="social-link">
                   <div className="social-link-inside" />

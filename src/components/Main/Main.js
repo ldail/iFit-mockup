@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './Main.css';
 import { REVIEWS, VIDEOS, EQUIPMENT } from '../../assets/info';
 import timeIcon from '../../assets/icons/time-icon.png';
@@ -15,20 +15,53 @@ const Main = ({topHeaderRef, subHeaderRef}) => {
   The image's max size is 801 pixels height, so if it exceeds that, keep it at 801.
   */
   const [heroHeight, setHeroHeight] = useState(500);
+  const [headerHeight, setHeaderHeight] = useState(500);
   useEffect(() => {
-    const determinedHeight = window.innerHeight - topHeaderRef?.current?.offsetHeight - (subHeaderRef?.current?.offsetHeight * 2) - 40 || 500;
+    const headerHeight = topHeaderRef?.current?.offsetHeight + (subHeaderRef?.current?.offsetHeight * (window.innerWidth >= 1028 ? 1 : 2));
+    console.log(headerHeight);
+    setHeaderHeight(headerHeight);
+    const determinedHeight = window.innerHeight - (headerHeight) - 40 || 500;
     setHeroHeight(determinedHeight <= 801 ? determinedHeight : 801);
   },[subHeaderRef, topHeaderRef]);
 
+  /*
+  Effect: Have the hero text fade in. We separate it by two lines and fade them in after each other
+  */
+  const heroTextFirstRef = useRef(null);
+  const heroTextSecondRef = useRef(null);
+  useEffect(() => {
+    heroTextFirstRef.current.classList.add('fade-in');
+    heroTextSecondRef.current.classList.add('fade-in-delay');
+  },[])
+
+  /*
+  Effect: When hovering over a video thumbnail, scale the video thumbnail up. 
+  When leaving the hover, return it to normal
+  */
+  const [videoHovered, setVideoHovered] = useState(null);
+
+  const toggleScaleOnHover = (i) => {
+    if (videoHovered === i) {
+      setVideoHovered(null)
+    }
+    else {
+      setVideoHovered(i)
+    }
+  }
+
   const widthDifference = parseInt((window.innerWidth - 1441) / 2);
 
+
   return (
-    <main className="main">
+    <main 
+      className="main"
+      style={{marginTop: headerHeight}}
+    >
       <div className="hero-image-container" style={{height: `${heroHeight}px`}}>
         <div className="hero-image" style={{height: `${heroHeight}px`, marginLeft: widthDifference > 0 ? `${widthDifference}px` : `0px` }} />
         <h2>
-          <span>The best personal training,</span>
-          <span>right in your own home</span>
+          <span ref={heroTextFirstRef}>The best personal training,</span>
+          <span ref={heroTextSecondRef}>right in your own home</span>
         </h2>
         <button className="join blue-button">Join iFit Coach</button>
       </div>
@@ -54,8 +87,13 @@ const Main = ({topHeaderRef, subHeaderRef}) => {
         <ul>
           {VIDEOS.map((video,i) => {
             return (
-              <li className="video-item" key={i}>
-                <a href={video.url} target="_blank" rel="noopener noreferrer"><img src={video.thumbnail} alt={video.title} className="thumbnail" /></a>
+              <li 
+                className="video-item"
+                key={i}
+                onMouseEnter={() => toggleScaleOnHover(i)}
+                onMouseLeave={() => toggleScaleOnHover(i)}
+              >
+                <a href={video.url} target="_blank" rel="noopener noreferrer" className="thumbnail-container"><img src={video.thumbnail} alt={video.title} className={`thumbnail ${videoHovered === i ? 'scaleUpAnimation' : 'scaleDownAnimation'}`} /></a>
                 <div className="video-details">
                   <div className="video-created-info">
                     <h5><a href={video.url} target="_blank" rel="noopener noreferrer">{video.title}</a></h5>
@@ -92,7 +130,7 @@ const Main = ({topHeaderRef, subHeaderRef}) => {
         <ul>
           {EQUIPMENT.map((equipmentItem,i) => {
             return (
-              <li className="equipment-item" key={i}>
+              <li className="equipment-item"  key={i}>
                 <a href={equipmentItem.url}>
                   <img src={equipmentItem.image} alt={equipmentItem.title} />
                   <span className="equipment-title">{equipmentItem.title}</span>
