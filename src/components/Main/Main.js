@@ -48,8 +48,6 @@ const Main = ({topHeaderRef, subHeaderRef, isHeaderVisible, setIsHeaderVisible})
     if (prevScrollY.current < currentScrollY && currentScrollY > heroHeight && isHeaderVisible) {
       setIsHeaderVisible(false);
     }
-    console.log(prevScrollY.current);
-    console.log(currentScrollY);
 
     //Scrolling down
     if (prevScrollY.current > currentScrollY && currentScrollY < heroHeight && !isHeaderVisible) {
@@ -57,7 +55,6 @@ const Main = ({topHeaderRef, subHeaderRef, isHeaderVisible, setIsHeaderVisible})
     }
 
     prevScrollY.current = currentScrollY;
-    console.log(isHeaderVisible, currentScrollY);
   };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
