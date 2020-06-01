@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/iFit-mockup/static/css/main.42aad4ea.chunk.css",
+    "main.js": "/iFit-mockup/static/js/main.b3572d71.chunk.js",
+    "main.js.map": "/iFit-mockup/static/js/main.b3572d71.chunk.js.map",
+    "runtime-main.js": "/iFit-mockup/static/js/runtime-main.c7c5040c.js",
+    "runtime-main.js.map": "/iFit-mockup/static/js/runtime-main.c7c5040c.js.map",
+    "static/js/2.28ae6410.chunk.js": "/iFit-mockup/static/js/2.28ae6410.chunk.js",
+    "static/js/2.28ae6410.chunk.js.map": "/iFit-mockup/static/js/2.28ae6410.chunk.js.map",
+    "index.html": "/iFit-mockup/index.html",
+    "precache-manifest.1b750c4ae9c234244316a5fcc0e2d4ee.js": "/iFit-mockup/precache-manifest.1b750c4ae9c234244316a5fcc0e2d4ee.js",
+    "service-worker.js": "/iFit-mockup/service-worker.js",
+    "static/css/main.42aad4ea.chunk.css.map": "/iFit-mockup/static/css/main.42aad4ea.chunk.css.map",
+    "static/js/2.28ae6410.chunk.js.LICENSE.txt": "/iFit-mockup/static/js/2.28ae6410.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/iFit-mockup/static/media/ProximaNova-Regular.feface72.ttf",
+    "static/media/bikes.png": "/iFit-mockup/static/media/bikes.b17c657f.png",
+    "static/media/ellipticals.png": "/iFit-mockup/static/media/ellipticals.29ff69e8.png",
+    "static/media/gear-junkie-logo.7af5d0f6.svg": "/iFit-mockup/static/media/gear-junkie-logo.7af5d0f6.svg",
+    "static/media/Main.css": "/iFit-mockup/static/media/hero.26fece2b.png",
+    "static/media/ifit-coach-logo.67aa7f4f.svg": "/iFit-mockup/static/media/ifit-coach-logo.67aa7f4f.svg",
+    "static/media/mashable-logo.ebea61d0.svg": "/iFit-mockup/static/media/mashable-logo.ebea61d0.svg",
+    "static/media/strength.png": "/iFit-mockup/static/media/strength.87b89c72.png",
+    "static/media/treadmills.png": "/iFit-mockup/static/media/treadmills.be777edc.png",
+    "static/media/video1thumbnail.png": "/iFit-mockup/static/media/video1thumbnail.d9317bb2.png",
+    "static/media/video2thumbnail.png": "/iFit-mockup/static/media/video2thumbnail.c97f1f00.png",
+    "static/media/video3thumbnail.png": "/iFit-mockup/static/media/video3thumbnail.2c5d11ac.png",
+    "static/media/video4thumbnail.png": "/iFit-mockup/static/media/video4thumbnail.65432c7d.png",
+    "static/media/video5thumbnail.png": "/iFit-mockup/static/media/video5thumbnail.874edca1.png",
+    "static/media/video6thumbnail.png": "/iFit-mockup/static/media/video6thumbnail.3a895e9a.png",
+    "static/media/video7thumbnail.png": "/iFit-mockup/static/media/video7thumbnail.dec7125f.png",
+    "static/media/video8thumbnail.png": "/iFit-mockup/static/media/video8thumbnail.8b04ec5a.png",
+    "static/media/wired-logo.993909fd.svg": "/iFit-mockup/static/media/wired-logo.993909fd.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c7c5040c.js",
+    "static/js/2.28ae6410.chunk.js",
+    "static/css/main.42aad4ea.chunk.css",
+    "static/js/main.b3572d71.chunk.js"
+  ]
+}
