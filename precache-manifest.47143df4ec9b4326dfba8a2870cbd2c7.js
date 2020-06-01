@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e38b793b4e0ed4a9b32143045ec272fd",
+    "revision": "ca9b77e432dc1c4ff4a22e4c79be4b8c",
     "url": "/ifit/index.html"
   },
   {
